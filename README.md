@@ -1,1 +1,0 @@
-# hbeyzagirgin.github.io
