@@ -1,0 +1,15 @@
+.common-centering  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row-align {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column-align {
+  display: flex;
+  flex-direction: column;
+}

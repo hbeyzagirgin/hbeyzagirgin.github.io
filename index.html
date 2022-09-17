@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html lang="tr">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <title></title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
-</head>
+  <body>
+    <nav className="sticky top-0 z-10 bg-white">
+      <a href="#home">
+        <div class="nav-item" id="logo">LOGO</div>
+      </a>
+      <div class="nav-item" id="buttons">
+        <li>
+          <a href="#about-me">
+            <div class="inner-link">Hakkımda</div>
+          </a>
+        </li>
+        <li>
+          <a href="#projects">
+            <div class="inner-link">Projelerim</div>
+          </a>
+        </li>
+        <li>
+          <a href="#contact">
+            <div class="inner-link">Bana Ulaşın</div>
+          </a>
+        </li>
+      </div>
+    </nav>
 
-<body>
-  <nav>
-    <div class="nav-item" id="logo">LOGO</div>
-    <div class="nav-item" id="buttons">
-      <li>
-        <a href="#about-me">
-          <div class="inner-link">
-            Hakkımda
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="#projects">
-          <div class="inner-link">
-            Projelerim
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="#contact">
-          <div class="inner-link">
-            Bana Ulaşın
-          </div>
-        </a>
-      </li>
+    <div class="screen" id="home">
+      <div class="mainContainer common-centering">
+        <div class="left"></div>
+        <div class="right"></div>
+      </div>
     </div>
-  </nav>
-</body>
 
+    <div class="screen" id="about-me">
+      <p>about-me</p>
+    </div>
+
+    <div class="screen" id="projects">
+      <p>projects</p>
+    </div>
+
+    <div class="screen" id="contact">
+      <p>contact</p>
+    </div>
+  </body>
 </html>
