@@ -1,54 +1,92 @@
 <!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <title></title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/style.css" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
 
-  <body>
-    <nav className="sticky top-0 z-10 bg-white">
-      <a href="#home">
-        <div class="nav-item" id="logo">LOGO</div>
-      </a>
-      <div class="nav-item" id="buttons">
-        <li>
-          <a href="#about-me">
-            <div class="inner-link">Hakkımda</div>
-          </a>
-        </li>
-        <li>
-          <a href="#projects">
-            <div class="inner-link">Projelerim</div>
-          </a>
-        </li>
-        <li>
-          <a href="#contact">
-            <div class="inner-link">Bana Ulaşın</div>
-          </a>
-        </li>
+<head>
+  <title></title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="css/style.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <nav className="sticky top-0 z-10 bg-white">
+    <div class="nav-item" id="logo">
+      <li>
+        <a href="#home">
+          <div class="inner-link">H. Beyza Girgin</div>
+        </a>
+      </li>
+    </div>
+
+    <div class="nav-item" id="buttons">
+      <li>
+        <a href="#about-me">
+          <div class="inner-link">Hakkımda</div>
+        </a>
+      </li>
+      <li>
+        <a href="#projects">
+          <div class="inner-link">Projelerim</div>
+        </a>
+      </li>
+      <li>
+        <a href="#contact">
+          <div class="inner-link">Bana Ulaşın</div>
+        </a>
+      </li>
+    </div>
+  </nav>
+
+  <div class="screen" id="home">
+    <div class="mainContainer">
+      <div id="left" class="inner-container">
+        <!-- logo -->
+        <img src="assets/logo.png" alt="" />
       </div>
-    </nav>
+      <div id="right" class="inner-container">
+        <div id="bio">
+          <h1 style="font-weight: bold; font-size: 60px;">
+            <span> Ben </span> Beyza GİRGİN,
+          </h1>
+          <h3 style="font-weight: bold; font-size: 25px;">
+            Freelancer editör, redaktör ve yaratıcı metin-senaryo yazarıyım.
+          </h3>
+          <br>
 
-    <div class="screen" id="home">
-      <div class="mainContainer common-centering">
-        <div class="left"></div>
-        <div class="right"></div>
+          <p>
+            Sakarya Üniversitesi İnsan ve Toplum Bilimleri Fakültesi Türk Dili ve Edebiyatı bölümünde okuyorum. <br>
+            <br>
+
+            Reklam videosu, kısa metrajlı film, tiyatro, skeç senaryoları ve basit metinler yazıyorum.
+
+            Eserlerinizi editleyerek ve redakte ederek basıma hazır hale getirebilirim. Fiziki olarak çıkardığınız
+            eserleri anlam bütünlüğüne uyarak dijitale aktarabilirim.
+
+            Şu anda bionluk.com sitesinde freelancer olarak ulaşabilirsiniz.
+          </p>
+
+
+
+
+
+
+        </div>
       </div>
     </div>
+  </div>
 
-    <div class="screen" id="about-me">
-      <p>about-me</p>
-    </div>
+  <div class="screen" id="about-me">
+    <p>about-me</p>
+  </div>
 
-    <div class="screen" id="projects">
-      <p>projects</p>
-    </div>
+  <div class="screen" id="projects">
+    <p>projects</p>
+  </div>
 
-    <div class="screen" id="contact">
-      <p>contact</p>
-    </div>
-  </body>
+  <div class="screen" id="contact">
+    <p>contact</p>
+  </div>
+</body>
+
 </html>
