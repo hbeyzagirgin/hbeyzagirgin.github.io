@@ -7,6 +7,10 @@
   color: black;
 }
 
+:root {
+     color-scheme: light only;
+}
+
 html,
 body {
   height: 100%;
@@ -313,6 +317,3 @@ img#bionluk {
   align-items: center;
 }
 
-a: {
-
-}
