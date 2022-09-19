@@ -98,7 +98,7 @@
 
   .bg-image {
     /* The image used */
-    background-image: url("../assets/images/elisa-calvet-b-S3nUOqDmUvc-unsplash.jpeg");
+    background-image: url("https://images.unsplash.com/photo-1495640452828-3df6795cf69b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
     
     /* Add the blur effect */
     filter: blur(10px);
@@ -124,6 +124,8 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    
+    background-color: rgba(555,555,555, 0.5)
 
   }
 
