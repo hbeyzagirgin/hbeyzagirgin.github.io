@@ -7,13 +7,12 @@
   color: black;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color-scheme: light only;
+:root {
     --text: #000;
     --bg: #fff;
-  }
 }
+
+
 html,
 body {
   height: 100%;
@@ -230,7 +229,7 @@ p {
 
 #single-project-container {
 
-    width: 100%;
+  width: 100%;
   height: 100%;
   flex: 0 0 auto;
   display: flex;
@@ -320,3 +319,10 @@ img#bionluk {
   align-items: center;
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light only;
+    --text: #000;
+    --bg: #fff;
+  }
+}
