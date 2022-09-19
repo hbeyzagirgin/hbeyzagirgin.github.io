@@ -443,6 +443,10 @@
 
   }
 
+  span, h1, h3 {
+    color: black;
+  }
+
   .inner-container {
     height: 100%;
     display: flex;
