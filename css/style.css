@@ -7,10 +7,13 @@
   color: black;
 }
 
-:root {
-     color-scheme: light only;
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light only;
+    --text: #000;
+    --bg: #fff;
+  }
 }
-
 html,
 body {
   height: 100%;
