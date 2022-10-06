@@ -1,11 +1,10 @@
-@import "https://unpkg.com/open-props";
-@import "https://unpkg.com/open-props/normalize.min.css";
+@import 'https://unpkg.com/open-props';
+@import 'https://unpkg.com/open-props/normalize.min.css';
 * {
   margin: 0;
   padding: 0;
   font-family: 'Playfair Display', serif;
 }
-
 
 @media (prefers-color-scheme: light) {
   html,
@@ -98,16 +97,16 @@
 
   .bg-image {
     /* The image used */
-    background-image: url("https://images.unsplash.com/photo-1495640452828-3df6795cf69b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
-    
+    background-image: url('https://images.unsplash.com/photo-1495640452828-3df6795cf69b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+
     /* Add the blur effect */
     filter: blur(10px);
     -webkit-filter: blur(10px);
-    
+
     /* Full height */
-    height: 100%; 
+    height: 100%;
     width: 100%;
-    
+
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -124,9 +123,8 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    
-    background-color: rgba(555,555,555, 0.5)
 
+    background-color: rgba(555, 555, 555, 0.5);
   }
 
   .inner-container {
@@ -145,7 +143,7 @@
     width: 75%;
   }
 
-  div#bio{
+  div#bio {
     width: 90%;
     height: 100%;
 
@@ -167,7 +165,6 @@
   #projects {
     width: 100%;
     height: 100%;
-
 
     display: flex;
     flex-direction: column;
@@ -196,7 +193,6 @@
     overscroll-behavior-inline: contain;
   }
 
-
   .media-element {
     display: grid;
     grid-template-rows: min-content;
@@ -205,8 +201,6 @@
     background: var(--surface-2);
     border-radius: var(--radius-2);
     box-shadow: var(--shadow-2);
-
-
   }
 
   .media-element > img {
@@ -215,17 +209,21 @@
     object-fit: cover;
   }
 
+  .media-element > img#user-pp {
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+  }
+
   .snaps-inline {
     scroll-snap-type: inline mandatory;
     scroll-padding-inline: var(--_spacer, 1rem);
   }
 
   .snaps-inline > * {
-    scroll-snap-align: start;
+    scroll-snap-align: center;
   }
 
   #single-project-container {
-
     width: 100%;
     height: 100%;
     flex: 0 0 auto;
@@ -241,8 +239,6 @@
     /* flex-direction: row; */
     /* justify-content: center; */
     /* align-items: center; */
-
-
   }
 
   #project-text {
@@ -267,7 +263,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     width: 80%;
     height: 100%;
   }
@@ -277,7 +273,6 @@
     height: 90%;
     background-color: tan;
   }
-
 
   footer#contact {
     border-top: 0.5px solid lightgray;
@@ -315,10 +310,7 @@
     justify-content: center;
     align-items: center;
   }
-
 }
-
-
 
 @media (prefers-color-scheme: dark) {
   html,
@@ -411,16 +403,16 @@
 
   .bg-image {
     /* The image used */
-    background-image: url("https://images.unsplash.com/photo-1495640452828-3df6795cf69b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
-    
+    background-image: url('https://images.unsplash.com/photo-1495640452828-3df6795cf69b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+
     /* Add the blur effect */
     filter: blur(10px);
     -webkit-filter: blur(10px);
-    
+
     /* Full height */
-    height: 100%; 
+    height: 100%;
     width: 100%;
-    
+
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -438,12 +430,13 @@
     align-items: center;
     flex-direction: row;
 
-    background-color: rgba(555,555,555, 0.5);
+    background-color: rgba(555, 555, 555, 0.5);
     color: black;
-
   }
 
-  span, h1, h3 {
+  span,
+  h1,
+  h3 {
     color: black;
   }
 
@@ -463,7 +456,7 @@
     width: 75%;
   }
 
-  div#bio{
+  div#bio {
     width: 90%;
     height: 100%;
 
@@ -486,6 +479,16 @@
     width: 100%;
     height: 100%;
 
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  #user-comments {
+    width: 100%;
+    height: 100%;
 
     display: flex;
     flex-direction: column;
@@ -514,7 +517,6 @@
     overscroll-behavior-inline: contain;
   }
 
-
   .media-element {
     display: grid;
     grid-template-rows: min-content;
@@ -523,8 +525,6 @@
     background: var(--surface-2);
     border-radius: var(--radius-2);
     box-shadow: var(--shadow-2);
-
-
   }
 
   .media-element > img {
@@ -543,7 +543,6 @@
   }
 
   #single-project-container {
-
     width: 100%;
     height: 100%;
     flex: 0 0 auto;
@@ -559,8 +558,6 @@
     /* flex-direction: row; */
     /* justify-content: center; */
     /* align-items: center; */
-
-
   }
 
   #project-text {
@@ -585,7 +582,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     width: 80%;
     height: 100%;
   }
@@ -595,7 +592,6 @@
     height: 90%;
     background-color: tan;
   }
-
 
   footer#contact {
     border-top: 0.5px solid lightgray;
@@ -633,5 +629,16 @@
     justify-content: center;
     align-items: center;
   }
+}
 
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: darkgray;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
 }
